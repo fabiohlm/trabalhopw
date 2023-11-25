@@ -1,0 +1,42 @@
+<html>
+<head>
+   <title> DOM </title>
+   <style>
+      table,
+      td,
+      th {
+         border: 1px solid black;
+      }
+   </style>
+   <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form class="form js-form">
+        <label for="name">
+            Nome
+            <input class="form-field js-field" id="name" maxlength="120" name="name" required type="text" value="fabio">
+        </label>
+        <br>
+        <label for="birth-date">
+            Data de Nascimento
+            <input class="form-field js-field" placeholder="DD/MM/YYYY" id="birth-date" name="birth-date" required type="date" value="2023-10-31">
+        </label>
+        <br>
+    </form>
+    <button id="btn" onclick="addRow()">Salvar</button>
+    <br><br>
+    <table id="myTable">
+        <thead>
+            <th> Nome </th>
+            <th> Data de nascimento </th>
+            <th> Atualizar </th>
+            <th> Remover </th>
+        </thead>
+        <tbody id="tableBody">
+    
+   </table>
+</body>
+
+</html>
